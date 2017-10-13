@@ -3,6 +3,7 @@
 const http = require('http');
 const fs = require('fs');
 
+// Создание ВЕБ-сервера
 const server = http.createServer(function (request, response) {
     console.log(request.method, request.url);
     if (request.url == '/style.css'){
